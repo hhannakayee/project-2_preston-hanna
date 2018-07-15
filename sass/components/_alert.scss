@@ -1,0 +1,63 @@
+// Alert Component Stylesheet
+// ========================================
+
+.alert {
+
+  &--error {
+    @include alert ($error-red, $white);
+    display: flex; // TODO: Since you used these on all of the alerts you could have included this on the alert mixin
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+     &-message {
+       flex: 3;
+       padding-top: .05em;
+     }
+
+     &-icon {
+       margin-left: auto;
+     }
+  }
+
+  &--success {
+    @include alert ($success-green, $white);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+     &-message {
+       flex: 3;
+       padding-top: .05em;
+     }
+
+     &-icon {
+       margin-left: auto;
+     }
+  }
+
+  &--notification {
+    @include alert ($dark-grey, $white);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+     &-message {
+       flex: 3;
+       padding-top: .05em;
+     }
+
+     &-icon {
+       margin-left: auto;
+     }
+  }
+}
+
+
+.lnr {
+  display: inline-block;
+  fill: currentColor;
+  width: 1.3em;
+  height: 1.3em;
+  vertical-align: -0.05em;
+  color: $white;
+}

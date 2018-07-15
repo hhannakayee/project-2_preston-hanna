@@ -1,0 +1,234 @@
+// Base Layout Stylesheet
+// This is where your layout of the project will go
+// ========================================
+
+body {
+  background-color: $white;
+}
+
+.header {
+  min-height: 20px;
+  min-width: 350px;
+  width: 70%;
+  padding: $spacer-s $spacer-s;
+  margin: $spacer-lg auto;
+}
+
+.navigation {
+  display: flex;
+  font-family: $secondary-font;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $purple;
+
+  &__logo {
+    margin: auto;
+
+    img {
+      height: 30px;
+      margin-right: $spacer-s;
+    }
+  }
+
+  &__index {
+    margin: auto;
+  }
+
+  &__elements {
+    margin: auto;
+  }
+
+  &__components {
+    margin: auto;
+  }
+
+  li a {
+
+  }
+
+}
+
+.main {
+  padding: $spacer-m;
+  margin: auto;
+  max-width: 1300px;
+  flex: 1 0 auto;
+  min-height: 100vh;
+
+  @include media($medium) {
+    width: 80%;
+  }
+
+  &__section {
+    margin: $spacer-xlg $reset-0;
+
+    &--index {
+
+      img {
+        height: 100px;
+        margin: auto;
+        display: block;
+        margin-bottom: $spacer-lg;
+      }
+    }
+  }
+}
+
+.item-container {
+    margin: $spacer-m $reset-0;
+}
+
+
+
+/********* PRIMARY / SECONDARY COLORS *********/
+
+.primary-colors {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+
+  @include media($medium) {
+    flex-direction: row;
+  }
+}
+
+.primary-color {
+  margin-bottom: 15px;
+  margin-right: 20px;
+  color: $white;
+  width: 100%;
+  flex-grow: 1;
+  margin: 0 20px 15px 0;
+
+  &__chip {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  @include media($large) {
+    width: 25%;
+  }
+}
+
+.background--green {
+  height: 200px;
+  flex: 3;
+
+  &-second {
+    flex: 1;
+  }
+
+  &-third {
+    flex: 1;
+  }
+}
+
+.background--purple {
+  height: 200px;
+  flex: 3;
+
+  &-second {
+    flex: 1;
+  }
+
+  &-third {
+    flex: 1;
+  }
+}
+
+.background--blue {
+  height: 200px;
+  flex: 3;
+
+  &-second {
+    flex: 1;
+    background-color: $blue2;
+    opacity: 1;
+  }
+
+  &-third {
+    flex: 1;
+    background-color: $blue3;
+    opacity: 1;
+  }
+}
+
+/********* NOTIFICATION COLORS *********/
+.notification-colors {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+
+  @include media($medium) {
+    flex-direction: row;
+  }
+}
+
+.notification-color {
+  flex-grow: 1;
+  width: 100%;
+  margin: 0 20px 15px 0;
+}
+
+.background--success-green {
+  height: 200px;
+}
+
+.background--error-red {
+  height: 200px;
+}
+
+/********* ACCENT COLORS *********/
+.accent-colors {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+
+  @include media($medium) {
+    flex-direction: row;
+  }
+}
+
+.accent-color {
+  flex-grow: 1;
+  width: 100%;
+  margin: 0 20px 15px 0;
+}
+
+.background--dark-grey {
+  height: 200px;
+}
+
+.background--grey {
+  @extend .background--dark-grey;
+}
+
+.background--light-grey {
+  @extend .background--dark-grey;
+}
+
+.color-info {
+  padding: 15px;
+  color: $dark-grey;
+  background: $chip-grey;
+  min-height: 20px;
+  font-family: $secondary-font;
+  font-size: 15px;
+}
+
+
+
+/********* FOOTER *********/
+.footer {
+  background-color: $blue;
+  text-align: center;
+  position: sticky;
+  position: -webkit-sticky;
+  bottom: 0px;
+  height: 50px;
+}

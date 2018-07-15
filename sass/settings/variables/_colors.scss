@@ -1,0 +1,42 @@
+// Colors Variables Settings Stylesheet
+// ========================================
+
+$green: #81C14B;
+$purple: #8E518D;
+$blue: #204E4B;
+$blue2: #299998;
+$blue3: #86CBCE;
+$success-green: #5D9F43;
+$error-red: #D15D35;
+$dark-grey: #4C4C4C;
+$grey: #D8D8D8;
+$light-grey: #F7F7F7;
+$chip-grey: #EDEDED;
+$black: #000000;
+$white: #FFFFFF;
+
+// Main Palette List
+$colors: (
+  'green': $green,
+  'purple': $purple,
+  'blue': $blue,
+  'blue2': $blue2,
+  'blue3': $blue3,
+  'success-green': $success-green,
+  'error-red': $error-red,
+  'dark-grey': $dark-grey,
+  'grey': $grey,
+  'light-grey': $light-grey,
+  'chip-grey': $chip-grey,
+  'black': $black,
+  'white': $white
+);
+
+// TODO: These should look like the color map on the typography page (See below)
+// $type-colors: (
+//   'black':     ( black ),
+//   'white':     ( white ),
+//   'green':     ( green ),
+//   'purple':    ( purple ),
+//   'blue':      ( blue )
+// );

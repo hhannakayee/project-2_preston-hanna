@@ -1,0 +1,81 @@
+// Base Typography Stylesheet
+// This is where your base typography will go
+// ========================================
+
+body {
+  font-family: $primary-font;
+  font-size: 14px;
+}
+
+h1 {
+  @include font-type($primary-font, normal, 700);
+  font-size: 48px;
+  color: $blue;
+  margin-bottom: 10px; // NOTE: You can use $spacer-s here
+}
+
+h2 {
+  @include font-type($secondary-font, italic, 400);
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  @include font-type($secondary-font, normal, 400);
+  font-size: 30px;
+  color: $green;
+  margin-bottom: 10px;
+}
+
+h4 {
+  @include font-type($secondary-font, normal, 700);
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+h5 {
+  @include font-type($primary-font, normal, 400);
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+h6 {
+  @include font-type($secondary-font, normal, 900);
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+p {
+  @include font-type($secondary-font, normal, 400);
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  color: $dark-grey;
+}
+
+a {
+  @include font-type($secondary-font, normal, 700);
+  font-size: 14px;
+  color: $purple;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover {
+    color: $green;
+  }
+}
+
+.color-tag {
+  padding-left: 1.2rem;
+  margin: 50%;
+  width: 0px;
+  white-space: nowrap;
+  position: relative;
+  text-align: left;
+  transform-origin: bottom;
+  margin-top: 170px;
+  transform: rotate(-90deg);
+  font-family: $secondary-font;
+  font-size: 14px;
+  color: $white;
+}

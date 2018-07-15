@@ -1,0 +1,31 @@
+// Button Component Stylesheet
+// ========================================
+
+.button {
+
+  &--primary {
+    @include button ($blue2, $white);
+
+    &:hover {
+      -webkit-box-shadow: 0px 5px 0px 0px rgba(32,78,75,1);
+      -moz-box-shadow: 0px 5px 0px 0px rgba(32,78,75,1);
+      box-shadow: 0px 5px 0px 0px rgba(32,78,75,1);
+    }
+  }
+
+  &--secondary {
+    @include button ($white, $blue2);
+    box-shadow: 0px 0px 0px 2px $blue2 inset;
+    -moz-box-shadow: 0px 0px 0px 2px $blue2 inset;
+    -webkit-box-shadow: 0px 0px 0px 2px $blue2 inset;
+
+    &:hover {
+      @include button ($blue2, $white);
+    }
+  }
+
+  &--disabled {
+    @include button ($grey, $white);
+
+  }
+}
