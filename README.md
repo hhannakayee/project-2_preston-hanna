@@ -1,20 +1,24 @@
-# Project 1 - Part 2
+# Project 2 - OZŪ
 
-## Links
+#### Link to repository
+[https://github.com/hhannakayee/project-2_preston-hanna.git](https://github.com/hhannakayee/project-2_preston-hanna.git)
 
-- [GitHub Repository](https://github.com/hhannakayee/project1_part-2_preston-hanna)
+#### Link to website
+[Website Link](www.thisisyourwebsite.com)
+<!-- Edit this for Project 2 - Part 3 -->
 
-- [Live Project](http://hannapreston.design/MMC6278/project-1_part-2_preston-hanna/)
+#### Instructions on how to view
+1. `git clone` the repository to view it locally.
+2. Use `sass --watch sass:css --style compressed` to get sass started.
 
-## Resources
+---
 
-- [Styling Dropdown Menu](https://fabriceleven.com/design/clever-way-to-change-the-drop-down-selector-arrow-icon/): I used this page to help style my select dropdown to not be the basic styling.
+## Project 2 - Part 3
 
-- [SVG Icons](https://linearicons.com/free)
-- [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp)
+#### Resources
 
-## Comments
+#### Deductions
 
-- I still am not completely sure everywhere that I should be using Flexbox, does it need to be on most DIVs or only some?
+#### Comments
 
-- I also still don't always know exactly when I need to use Sass or not, I wish we had done some smaller exercises with it beforehand.
+---
