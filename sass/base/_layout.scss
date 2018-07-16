@@ -17,7 +17,7 @@ body {
 .navigation {
   display: flex;
   font-family: $secondary-font;
-  font-weight: 700;
+  font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: $purple;
@@ -42,11 +42,6 @@ body {
   &__components {
     margin: auto;
   }
-
-  li a {
-
-  }
-
 }
 
 .main {
@@ -79,10 +74,7 @@ body {
     margin: $spacer-m $reset-0;
 }
 
-
-
-/********* PRIMARY / SECONDARY COLORS *********/
-
+/*********    PRIMARY / SECONDARY COLORS    *********/
 .primary-colors {
   display: flex;
   flex-direction: column;
@@ -113,50 +105,7 @@ body {
   }
 }
 
-.background--green {
-  height: 200px;
-  flex: 3;
-
-  &-second {
-    flex: 1;
-  }
-
-  &-third {
-    flex: 1;
-  }
-}
-
-.background--purple {
-  height: 200px;
-  flex: 3;
-
-  &-second {
-    flex: 1;
-  }
-
-  &-third {
-    flex: 1;
-  }
-}
-
-.background--blue {
-  height: 200px;
-  flex: 3;
-
-  &-second {
-    flex: 1;
-    background-color: $blue2;
-    opacity: 1;
-  }
-
-  &-third {
-    flex: 1;
-    background-color: $blue3;
-    opacity: 1;
-  }
-}
-
-/********* NOTIFICATION COLORS *********/
+/*********    NOTIFICATION COLORS    *********/
 .notification-colors {
   display: flex;
   flex-direction: column;
@@ -182,7 +131,7 @@ body {
   height: 200px;
 }
 
-/********* ACCENT COLORS *********/
+/*********    ACCENT COLORS    *********/
 .accent-colors {
   display: flex;
   flex-direction: column;
@@ -200,20 +149,9 @@ body {
   margin: 0 20px 15px 0;
 }
 
-.background--dark-grey {
-  height: 200px;
-}
-
-.background--grey {
-  @extend .background--dark-grey;
-}
-
-.background--light-grey {
-  @extend .background--dark-grey;
-}
 
 .color-info {
-  padding: 15px;
+  padding: $spacer-m;
   color: $dark-grey;
   background: $chip-grey;
   min-height: 20px;
@@ -221,9 +159,7 @@ body {
   font-size: 15px;
 }
 
-
-
-/********* FOOTER *********/
+/*********    FOOTER    *********/
 .footer {
   background-color: $blue;
   text-align: center;

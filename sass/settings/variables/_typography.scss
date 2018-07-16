@@ -2,11 +2,52 @@
 // ===============================================
 
 // Google Fonts
-@import url(https://fonts.googleapis.com/css?family=Arvo:400,700|Chivo:400,400i,700,900);
+@import url(https://fonts.googleapis.com/css?family=Arvo:400,700);
+
+// Imported Fonts
+@font-face {
+	font-family: 'BasierCircle';
+	src: url('../fonts/BasierCircle-Bold.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/BasierCircle-Bold.woff') format('woff'),
+	     url('../fonts/BasierCircle-Bold.ttf')  format('truetype'),
+	     url('../fonts/BasierCircle-Bold.svg#svgBasierCircle-Bold') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'BasierCircle';
+	src: url('../fonts/BasierCircle-Regular.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/BasierCircle-Regular.woff') format('woff'),
+	     url('../fonts/BasierCircle-Regular.ttf')  format('truetype'),
+	     url('../fonts/BasierCircle-Regular.svg#svgBasierCircle-Bold') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'BasierCircle';
+	src: url('../fonts/BasierCircle-RegularItalic.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/BasierCircle-RegularItalic.woff') format('woff'),
+	     url('../fonts/BasierCircle-RegularItalic.ttf')  format('truetype'),
+	     url('../fonts/BasierCircle-RegularItalic.svg#svgBasierCircle-Bold') format('svg');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+	font-family: 'BasierCircle';
+	src: url('../fonts/BasierCircle-SemiBold.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/BasierCircle-SemiBold.woff') format('woff'),
+	     url('../fonts/BasierCircle-SemiBold.ttf')  format('truetype'),
+	     url('../fonts/BasierCircle-SemiBold.svg#svgBasierCircle-Bold') format('svg');
+  font-weight: 200;
+  font-style: normal;
+}
 
 // Font Variables
 $primary-font: 'Arvo', serif;
-$secondary-font: 'Chivo', sans-serif;
+$secondary-font: 'BasierCircle', sans-serif;
 
 // Text Colors Map
 $type-colors: (

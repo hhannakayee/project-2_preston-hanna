@@ -11,50 +11,50 @@ h1 {
   @include font-type($primary-font, normal, 700);
   font-size: 48px;
   color: $blue;
-  margin-bottom: 10px; // NOTE: You can use $spacer-s here
+  margin-bottom: $spacer-s;
 }
 
 h2 {
-  @include font-type($secondary-font, italic, 400);
+  @include font-type($secondary-font, italic, 100);
   font-size: 36px;
-  margin-bottom: 10px;
+  margin-bottom: $spacer-s;
 }
 
 h3 {
-  @include font-type($secondary-font, normal, 400);
+  @include font-type($secondary-font, normal, 100);
   font-size: 30px;
   color: $green;
-  margin-bottom: 10px;
+  margin-bottom: $spacer-s;
 }
 
 h4 {
-  @include font-type($secondary-font, normal, 700);
+  @include font-type($secondary-font, normal, 200);
   font-size: 24px;
-  margin-bottom: 10px;
+  margin-bottom: $spacer-s;
 }
 
 h5 {
   @include font-type($primary-font, normal, 400);
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: $spacer-s;
 }
 
 h6 {
-  @include font-type($secondary-font, normal, 900);
+  @include font-type($secondary-font, normal, 300);
   font-size: 18px;
-  margin-bottom: 10px;
+  margin-bottom: $spacer-s;
 }
 
 p {
-  @include font-type($secondary-font, normal, 400);
+  @include font-type($secondary-font, normal, 100);
   font-size: 20px;
   line-height: 1.5;
-  margin-bottom: 15px;
+  margin-bottom: $spacer-s;
   color: $dark-grey;
 }
 
 a {
-  @include font-type($secondary-font, normal, 700);
+  @include font-type($secondary-font, normal, 300);
   font-size: 14px;
   color: $purple;
   text-transform: uppercase;
