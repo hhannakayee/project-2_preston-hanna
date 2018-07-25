@@ -14,22 +14,24 @@ $light-grey: #F7F7F7;
 $chip-grey: #EDEDED;
 $black: #000000;
 $white: #FFFFFF;
+// $transparent: rgba(0, 0, 255, 0);
 
 // Main Palette List
 $colors: (
-  'green': $green,
-  'purple': $purple,
-  'blue': $blue,
-  'blue2': $blue2,
-  'blue3': $blue3,
-  'success-green': $success-green,
-  'error-red': $error-red,
-  'dark-grey': $dark-grey,
-  'grey': $grey,
-  'light-grey': $light-grey,
-  'chip-grey': $chip-grey,
-  'black': $black,
-  'white': $white
+  'green': ( green ),
+  'purple': ( purple ),
+  'blue': ( blue ),
+  'blue2': ( blue2 ),
+  'blue3': ( blue3 ),
+  'success-green': ( success-green ),
+  'error-red': ( error-red ),
+  'dark-grey': ( dark-grey ),
+  'grey': ( grey ),
+  'light-grey': ( light-grey ),
+  'chip-grey': ( chip-grey ),
+  'black': ( black ),
+  'white': ( white ),
+  // 'transparent': ( transparent )
 );
 
 // TODO: These should look like the color map on the typography page (See below)
