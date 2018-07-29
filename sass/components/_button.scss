@@ -25,14 +25,14 @@
   }
 
   &--secondary-header {
-    @include button ($green, $white);
+    @include button (transparent, $white);
     box-shadow: 0px 0px 0px 2px $white inset;
     -moz-box-shadow: 0px 0px 0px 2px $white inset;
     -webkit-box-shadow: 0px 0px 0px 2px $white inset;
 
     &:hover {
       @include button ($white, $white);
-      color: $green
+      color: $green;
     }
   }
 
