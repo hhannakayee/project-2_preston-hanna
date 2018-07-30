@@ -16,38 +16,39 @@ h1 {
 
 h2 {
   @include font-type($secondary-font, italic, 100);
-  font-size: 36px;
+  font-size: 40px;
   margin-bottom: $spacer-s;
 }
 
 h3 {
   @include font-type($secondary-font, normal, 100);
-  font-size: 30px;
+  font-size: 36px;
   color: $green;
   margin-bottom: $spacer-s;
 }
 
 h4 {
   @include font-type($secondary-font, normal, 200);
-  font-size: 24px;
+  font-size: 30px;
+  color: $green;
   margin-bottom: $spacer-s;
 }
 
 h5 {
   @include font-type($primary-font, normal, 400);
-  font-size: 20px;
+  font-size: 24px;
   margin-bottom: $spacer-s;
 }
 
 h6 {
   @include font-type($secondary-font, normal, 300);
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: $spacer-s;
 }
 
 p {
   @include font-type($secondary-font, normal, 100);
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.5;
   margin-bottom: $spacer-s;
   color: $dark-grey;

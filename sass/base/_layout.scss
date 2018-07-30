@@ -7,9 +7,8 @@ body {
 }
 
 .header {
-  min-height: 350px;
   width: 90%;
-  padding: 7% 5%;
+  padding: 50px 5%;
   background: #339f8f; /* Old browsers */
   background: -moz-linear-gradient(top, #339f8f 0%, #81c249 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top, #339f8f 0%,#81c249 100%); /* Chrome10-25,Safari5.1-6 */
@@ -17,21 +16,22 @@ body {
   display: flex;
   flex: 1 auto;
   flex-direction: column;
-  // text-align: center;
-
-  & .button {
-    margin: auto;
-    padding: $spacer-xs;
-  }
 }
 
-.h1__header {
+.h1__home {
   text-align: center;
 }
 
-.h3__header {
+.h3__home {
   color: #FFFFFF;
   text-align: center;
+  padding-top: $spacer-s;
+  padding-bottom: $spacer-s;
+}
+
+.h4__home {
+  text-align: center;
+  padding-top: $spacer-lg;
 }
 
 nav {
@@ -60,89 +60,15 @@ nav {
   }
 }
 
-// nav ul {
-// 	margin-left: 0;
-//     font-size: 18px;
-//     list-style-type: none;
-//     padding-top: 10px;
-//     padding-bottom: 10px;
-// }
-//
-// nav ul li {
-// 	display: inline;
-// 	padding-left: 3%;
-//     padding-right: 3%;
-// 	font-size: 1.2rem;
-// 	text-transform: uppercase;
-// }
-//
-// nav ul li a {
-// 	text-decoration: none;
-// 	color: #fff;
-// }
-//
-// nav ul li a:hover {
-// 	text-decoration: underline;
-// }
-
-// .navigation {
-//   display: flex;
-//   font-family: $secondary-font;
-//   font-weight: bold;
-//   letter-spacing: 1px;
-//   text-transform: uppercase;
-//   color: $purple;
-//
-//   &__logo {
-//     margin: auto;
-//
-//     img {
-//       height: 30px;
-//       margin-right: $spacer-s;
-//     }
-//   }
-//
-//   &__index {
-//     margin: auto;
-//   }
-//
-//   &__elements {
-//     margin: auto;
-//   }
-//
-//   &__components {
-//     margin: auto;
-//   }
-// }
-
 .main {
-  padding: $spacer-m;
-  margin: 0;
-  max-width: 1300px;
-  flex: 1 0 auto;
+  padding: $spacer-xlg;
+  margin: 0 auto;
+  max-width: 1250px;
   min-height: 100vh;
-
-  // @include media($medium) {
-  //   width: 100%;
-  // }
-  //
-  // &__section {
-  //   margin: $spacer-xlg $reset-0;
-  //
-  //   &--index {
-  //
-  //     img {
-  //       height: 100px;
-  //       margin: auto;
-  //       display: block;
-  //       margin-bottom: $spacer-lg;
-  //     }
-  //   }
-  // }
 }
 
 .item-container {
-    margin: $spacer-m $reset-0;
+  margin: $spacer-m $reset-0;
 }
 
 /******************    PRIMARY / SECONDARY COLORS    ******************/
@@ -220,7 +146,6 @@ nav {
   margin: 0 20px 15px 0;
 }
 
-
 .color-info {
   padding: $spacer-m;
   color: $dark-grey;
@@ -230,13 +155,96 @@ nav {
   font-size: 15px;
 }
 
+/******************    HOMEPAGE    ******************/
+span.line {
+  display: inline-block;
+}
+
+.button--secondary-header {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: $spacer-lg;
+  margin-bottom: $spacer-m;
+
+  &-icon {
+    flex: 1;
+    margin-left: 2px;
+  }
+
+  &-message {
+    flex: 7;
+    padding-top: .13em;
+  }
+}
+
+.button--disabled-header {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-bottom: $spacer-m;
+
+  &-icon {
+    flex: 1;
+    margin-left: 2px;
+  }
+
+  &-message {
+    flex: 7;
+    padding-top: .13em;
+  }
+}
+
+.button-icon {
+  display: inline-block;
+  fill: currentColor;
+  width: 1.3em;
+  height: 1.3em;
+  vertical-align: -.15em;
+  color: $white;
+}
+
+.appbenefits {
+  width: 110%;
+  max-width: 450px;
+  display: block;
+  margin: $spacer-m -25%;
+
+  @include media($medium) {
+    margin: $spacer-m auto;
+    max-width: 450px;
+    width: 100%;
+  }
+}
 
 /******************    FOOTER    ******************/
 .footer {
   background-color: $blue;
   text-align: center;
-  position: sticky;
-  position: -webkit-sticky;
   bottom: 0px;
-  height: 50px;
+  height: 400px;
+
+  & p {
+    color: $white;
+  }
+}
+
+.footer-icons {
+  display: inline-block;
+  fill: currentColor;
+  color: $green;
+  max-width: 450px;
+  padding: $spacer-xlg;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.social-icon {
+  flex: 1;
+  width: 3em;
+  height: 3em;
 }

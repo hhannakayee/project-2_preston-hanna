@@ -5,6 +5,7 @@
 
   &--primary {
     @include button ($blue2, $white);
+    text-transform: capitalize;
 
     &:hover {
       -webkit-box-shadow: 0px 5px 0px 0px rgba(32,78,75,1);
@@ -18,6 +19,7 @@
     box-shadow: 0px 0px 0px 2px $blue2 inset;
     -moz-box-shadow: 0px 0px 0px 2px $blue2 inset;
     -webkit-box-shadow: 0px 0px 0px 2px $blue2 inset;
+    text-transform: capitalize;
 
     &:hover {
       @include button ($blue2, $white);
@@ -34,10 +36,20 @@
       @include button ($white, $white);
       color: $green;
     }
+
+    &:hover svg path {
+      color: $green;
+    }
   }
 
   &--disabled {
     @include button ($grey, $white);
+    cursor: not-allowed;
+    text-transform: capitalize;
+  }
 
+  &--disabled-header {
+    @include button ($grey, $white);
+    cursor: not-allowed;
   }
 }
