@@ -5,7 +5,7 @@
 
 #### Link to website
 [hannapreston.design](http://hannapreston.design/MMC6278/project-2_final)
-<!-- Edit this for Project 2 - Part 3 -->
+<!-- Edit this for Project 2 - Part 4 -->
 
 #### Instructions on how to view
 1. `git clone` the repository to view it locally.
@@ -13,7 +13,7 @@
 
 ---
 
-## Project 2 - Part 3
+## Project 2 - Part 4
 
 #### Resources
 
