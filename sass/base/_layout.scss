@@ -69,6 +69,13 @@ nav {
 
 .item-container {
   margin: $spacer-m $reset-0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+  @include media($medium) {
+    flex-direction: row;
+  }
 }
 
 /******************    PRIMARY / SECONDARY COLORS    ******************/
@@ -160,43 +167,6 @@ span.line {
   display: inline-block;
 }
 
-.button--secondary-header {
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  margin-top: $spacer-lg;
-  margin-bottom: $spacer-m;
-
-  &-icon {
-    flex: 1;
-    margin-left: 2px;
-  }
-
-  &-message {
-    flex: 7;
-    padding-top: .13em;
-  }
-}
-
-.button--disabled-header {
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  margin-bottom: $spacer-m;
-
-  &-icon {
-    flex: 1;
-    margin-left: 2px;
-  }
-
-  &-message {
-    flex: 7;
-    padding-top: .13em;
-  }
-}
-
 .button-icon {
   display: inline-block;
   fill: currentColor;
@@ -219,6 +189,37 @@ span.line {
   }
 }
 
+/******************    ABOUT    ******************/
+.main__steps {
+  flex: 3;
+  // display: flex;
+  // flex-direction: row;
+  // flex-wrap: nowrap;
+}
+
+.main__testimonials {
+  flex: 3;
+
+  @include media($medium) {
+    margin-left: 7%;
+  }
+
+  &-single {
+    margin: auto;
+    border-radius: 3px;
+    box-shadow: 0px 0px 0px 2px $light-grey inset;
+    -moz-box-shadow: 0px 0px 0px 2px $light-grey inset;
+    -webkit-box-shadow: 0px 0px 0px 2px $light-grey inset;
+    padding: 30px;
+    max-width: 450px;
+    margin-top: $spacer-lg;
+  }
+}
+
+.testimonial-img {
+  object-fit: cover;
+}
+
 /******************    FOOTER    ******************/
 .footer {
   background-color: $blue;
@@ -226,8 +227,19 @@ span.line {
   bottom: 0px;
   height: 400px;
 
+  @include media($medium) {
+    height: 350px;
+  }
+
   & p {
     color: $white;
+  }
+
+  & .button {
+    @include media($medium) {
+      display: inline-block;
+      margin: 0 10px;
+    }
   }
 }
 
