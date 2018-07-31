@@ -16,6 +16,16 @@ body {
   display: flex;
   flex: 1 auto;
   flex-direction: column;
+  min-height: 400px;
+}
+
+#header-about {
+  background:url("../images/about_bg.jpg") no-repeat center bottom;
+  background-size: cover;
+
+  @include media($medium) {
+    background:url("../images/about_bg2.jpg") no-repeat center center;
+  }
 }
 
 .h1__home {
