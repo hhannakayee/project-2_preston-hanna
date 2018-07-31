@@ -210,14 +210,20 @@ span.line {
     box-shadow: 0px 0px 0px 2px $light-grey inset;
     -moz-box-shadow: 0px 0px 0px 2px $light-grey inset;
     -webkit-box-shadow: 0px 0px 0px 2px $light-grey inset;
-    padding: 30px;
+    padding: $spacer-xlg;
     max-width: 450px;
     margin-top: $spacer-lg;
   }
 }
 
-.testimonial-img {
-  object-fit: cover;
+#testimonial-traveler {
+  background-image: url('../images/testimonial_brad.jpg');
+  background-size: cover;
+}
+
+#testimonial-student {
+  background-image: url('../images/testimonial_ashley.jpg');
+  background-size: cover;
 }
 
 /******************    FOOTER    ******************/

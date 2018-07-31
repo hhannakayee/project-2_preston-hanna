@@ -5,7 +5,7 @@
 
   display: flex;
   align-items: center;
-  background-color: $white;
+  // background-color: $white;
   width: 225px;
   padding: $spacer-s;
   border-radius: 3px;
@@ -13,11 +13,12 @@
   &__avatar {
     width: 50px;
     height: 50px;
-    background-color: $grey;
+    // background-color: $grey;
     color: $white;
     border-radius: 50%;
-    display: inline-flex;
-    align-items: center;
+    display: block;
+    // display: inline-flex;
+    // align-items: center;
     justify-content: center;
     margin-right: $spacer-s;
   }
