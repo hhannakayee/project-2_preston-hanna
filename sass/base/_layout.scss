@@ -16,15 +16,22 @@ body {
   display: flex;
   flex: 1 auto;
   flex-direction: column;
-  min-height: 400px;
+  max-height: 500px;
+  margin: auto;
+
+  @include media($medium) {
+    max-height: 400px;
+  }
 }
 
 #header-about {
   background:url("../images/about_bg.jpg") no-repeat center bottom;
   background-size: cover;
+  min-height: 400px;
 
   @include media($medium) {
     background:url("../images/about_bg2.jpg") no-repeat center center;
+    background-size: cover;
   }
 }
 
@@ -49,7 +56,7 @@ nav {
 	padding: 5px;
   text-align: center;
   position: static;
-  width: 100%;
+  // width: 100%;
 
   & ul {
     margin-left: 0;
