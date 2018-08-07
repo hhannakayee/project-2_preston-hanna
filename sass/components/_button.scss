@@ -21,6 +21,7 @@
     -moz-box-shadow: 0px 0px 0px 2px $blue2 inset;
     -webkit-box-shadow: 0px 0px 0px 2px $blue2 inset;
     text-transform: capitalize;
+    display: block;
 
     &:hover {
       @include button ($blue2, $white);

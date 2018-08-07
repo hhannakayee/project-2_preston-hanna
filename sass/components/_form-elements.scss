@@ -1,17 +1,22 @@
 // Form Elements Stylesheet
 // ========================================
 
-
 // Basic Form Input Styling
 .input {
   border: 2px solid $grey;
-  width: 250px;
+  width: 90%;
   border-radius: 3px;
   padding: $spacer-m;
-  margin-top: $spacer-m;
   font-family: $secondary-font;
-  font-weight: 400;
+  font-weight: 100;
   -webkit-appearance: none;
+  margin-bottom: $spacer-lg;
+
+  &__label {
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: $spacer-s;
+  }
 
   &-error {
     @extend .input ;
@@ -19,12 +24,16 @@
   }
 }
 
-
-
 // Select Form Input Styling
-select { // TODO: -3 points for each styled universal selector without a class name
+.select {
   @extend .input ;
   background-color: $white;
+  display: block;
+  min-width: 300px;
+
+  &__label {
+    display: block;
+  }
 }
 
 .dropdown {
@@ -36,7 +45,7 @@ select { // TODO: -3 points for each styled universal selector without a class n
     width: 0;
     position: absolute;
     right: 20px;
-    top: 50%;
+    top: 15px;
     margin-top: 5px;
     border-width: 6px 4px;
     border-style: solid;

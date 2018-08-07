@@ -27,13 +27,49 @@
     </header>
     <!--MAIN----------------------------------------------------------------->
     <main class="main">
-      <h4 class="h4__home">Send and recieve money in a few simple steps.</h4><br>
-      <h5>Link your card or bank account</h5>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
-      <h5>Add your friends</h5>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
-      <h5>Pick how you pay</h5>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+      <div class="item-container">
+        <div class="main__contactinfo">
+          <h6>Address</h6>
+          <p>123 Main Road<br>
+          Atlanta, GA 30303</p>
+          <h6>Email</h6>
+          <p><a href="mailto:hello@ozu.com">HELLO@OZU.COM</a></p>
+          <h6>Phone</h6>
+          <p>+1 404 123 4567</p>
+        </div><!--end class="main__contactinfo"-->
+
+        <div class="main__contactform">
+          <form id="form">
+            <!-- Name -->
+            <label for="name" class="input__label">Name*</label> 
+            <input type="text" name="name" id="name" placeholder="Full Name" required class="input" autocomplete='name'/>
+            <!-- Phone -->
+            <label for="phone" class="input__label">Phone Number</label> 
+            <input type="tel" name="phone" id="phone" placeholder="000.000.0000" class="input" autocomplete='tel'/>
+            <!-- Email -->
+            <label for="email" class="input__label">Email*</label> 
+            <input type="email" name="email" id="email" placeholder="Email" required class="input" autocomplete='email'/>
+            <!-- Select -->
+            <label class="input__label" for="method">Where did you hear about us?</label><br>
+            <div class="dropdown">
+              <select class="select" name="hear" id="hear" required>
+                <option selected="select">Select...</option>
+                  <option value="instagram">Instagram</option>
+                  <option value="facebook">Facebook</option>
+                  <option value="friend">Friend</option>
+              </select>
+            </div><br>
+            <!-- Text Area -->
+            <label class="input__label" for="message">Message*</label>
+            <textarea name="message" id="message" placeholder="Write your message here" class="input" rows="5" required></textarea>
+            <!-- Reset Button -->
+            <input class="button button--primary" value="reset" type="reset" id="reset"/>
+            <!-- Submit Button Disabled-->
+            <input class="button button--disabled" value="Submit" type="submit" id="submit"/>
+          </form>
+        </div><!--end class="main__contactform"-->
+
+      </div><!--end class="item-container"-->
     </main>
     <!--FOOTER--------------------------------------------------------------->
     <footer class="footer">
@@ -88,7 +124,7 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/hamburger.js"></script>
+    <script src="js/main.js"></script>
 
   </body>
 </html>
