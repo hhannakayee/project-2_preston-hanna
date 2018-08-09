@@ -9,35 +9,42 @@
   </head>
   <body>
     <!--HEADER--------------------------------------------------------------->
-
-    <!-- <nav>
-			<ul>
-				<li><a href="index.html">HOME</a></li>
-				<li><a href="about.html">ABOUT</a></li>
-				<li><a href="contact.html">CONTACT</a></li>
-        <li><a href="#">SIGN-IN</a></li>
-			</ul>
-		</nav> -->
-
-    <nav class="nav">
-      <div class="nav-container">
-        <h1>logo</h1>
-        <div class="menu-button">
-          menu
-        </div>
-      </div>
-      <ul class="menu">
-        <li class="menu--item"><a href="index.html">HOME</a></li>
-        <li class="menu--item"><a href="about.html">ABOUT</a></li>
-        <li class="menu--item"><a href="contact.html">CONTACT</a></li>
-        <li class="menu--item"><a href="#">SIGN-IN</a></li>
-      </ul>
-    </nav>
-
     <header class="header">
+      <nav class="nav">
+        <div class="grid-item nav-container">
+          <img src="images/logo.png" alt="Logo" class="nav__logo">
+          <div class="grid-item menu-button">
+            <img src="images/nav_button.png" alt="Navigation Button" class="nav__button"></a>
+          </div>
+        </div>
+        <div class="grid-item"></div>
+        <div class="grid-item">
+          <ul class="menu">
+            <li class="menu--item"><a href="index.html">home</a></li>
+            <li class="menu--item"><a href="about.html">about</a></li>
+            <li class="menu--item"><a href="contact.html">contact</a></li>
+            <li class="menu--item" id="modalBtn">SIGN IN</li>
+          </ul>
 
-      <h1 class="h1__home">Got a friend who OZU<!--&Umacr;--> money?</h1>
-      <h3 class="h3__home"><span class="line">Let us help you take</span>
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <form>
+                <label class="input__label" for="email">Email / Username*</label>
+                <input name="email" type="email" placeholder="email address" class="input modal__input" />
+                <label class="input__label" for="password">Password*</label>
+                <input name="password" placeholder="password" type="password" class="input modal__input" />
+                <input class="button button--primary" value="Submit" type="submit"/>
+                <input class="close button button--secondary" value="Cancel" type="submit"/>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <h1 class="h1__hero">Got a friend who OZU<!--&Umacr;--> money?</h1>
+      <h3 class="h3__hero"><span class="line">Let us help you take</span>
         <span class="line">care of that.</span></h3>
 
       <div class="button">
@@ -74,7 +81,7 @@
           </div>
         </div>
       </div>
-    </header>
+    </div>
     <!--MAIN----------------------------------------------------------------->
     <main class="main">
       <h4 class="h4__home">See how OZU can benefit you.</h4>
@@ -138,6 +145,7 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/modal.js"></script>
     <script src="js/main.js"></script>
 
   </body>

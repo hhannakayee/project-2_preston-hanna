@@ -9,22 +9,45 @@
   </head>
   <body>
     <!--HEADER--------------------------------------------------------------->
+    <header class="header">
+      <nav class="nav">
+        <div class="grid-item nav-container">
+          <img src="images/logo.png" alt="Logo" class="nav__logo"></a>
+          <div class="grid-item menu-button">
+            <img src="images/nav_button.png" alt="Navigation Button" class="nav__button"></a>
+          </div>
+        </div>
+        <div class="grid-item"></div>
+        <div class="grid-item">
+          <ul class="menu">
+            <li class="menu--item"><a href="index.html">home</a></li>
+            <li class="menu--item"><a href="about.html">about</a></li>
+            <li class="menu--item"><a href="contact.html">contact</a></li>
+            <li class="menu--item" id="modalBtn">SIGN IN</li>
+          </ul>
 
-    <nav>
-			<ul>
-				<li><a href="index.html">HOME</a></li>
-				<li><a href="about.html">ABOUT</a></li>
-				<li><a href="contact.html">CONTACT</a></li>
-        <li><a href="#">SIGN-IN</a></li>
-			</ul>
-		</nav>
-
-    <header class="header" id="header-about">
-      <div class="header-content">
-        <h1 class="h1__home">Don’t keep giving out IOUs.</h1>
-        <h3 class="h3__home">With OZŪ it’s easy.</h3>
-      </div>
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <form>
+                <label class="input__label" for="email">Email / Username*</label>
+                <input name="email" type="email" placeholder="email address" class="input modal__input" />
+                <label class="input__label" for="password">Password*</label>
+                <input name="password" placeholder="password" type="password" class="input modal__input" />
+                <input class="button button--primary" value="Submit" type="submit"/>
+                <input class="close button button--secondary" value="Cancel" type="submit"/>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
+
+    <div class="hero" id="hero-about">
+      <div>
+        <h1 class="h1__hero">Don’t keep giving out IOUs.</h1>
+        <h3 class="h3__hero">With OZŪ it’s easy.</h3>
+      </div>
+    </div>
     <!--MAIN----------------------------------------------------------------->
     <main class="main">
       <h4 class="h4__home">Send and recieve money in a few simple steps.</h4>

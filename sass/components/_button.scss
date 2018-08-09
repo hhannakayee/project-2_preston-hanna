@@ -2,7 +2,6 @@
 // ========================================
 
 .button {
-
   &--primary {
     @include button ($blue2, $white);
     text-transform: capitalize;
