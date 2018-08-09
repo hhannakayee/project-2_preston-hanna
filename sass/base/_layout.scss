@@ -21,12 +21,12 @@ body {
 }
 
 #hero-about {
-  background:url("../images/about_bg.jpg") no-repeat center bottom;
+  background:url("../img/about_bg.jpg") no-repeat center bottom;
   background-size: cover;
   min-height: 400px;
 
   @include media($medium) {
-    background:url("../images/about_bg2.jpg") no-repeat center center;
+    background:url("../img/about_bg2.jpg") no-repeat center center;
     background-size: cover;
   }
 }
@@ -262,12 +262,12 @@ span.line {
 }
 
 #testimonial-traveler {
-  background-image: url('../images/testimonial_brad.jpg');
+  background-image: url('../img/testimonial_brad.jpg');
   background-size: cover;
 }
 
 #testimonial-student {
-  background-image: url('../images/testimonial_ashley.jpg');
+  background-image: url('../img/testimonial_ashley.jpg');
   background-size: cover;
 }
 
