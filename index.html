@@ -9,8 +9,8 @@
   </head>
   <body>
     <!--HEADER--------------------------------------------------------------->
-    <header class="header">
-      <nav class="nav">
+    <header class="header stick">
+      <nav class="nav sticky">
         <div class="grid-item nav-container">
           <img src="images/logo.png" alt="Logo" class="nav__logo">
           <div class="grid-item menu-button">
@@ -140,12 +140,17 @@
           </div>
         </div>
       </div>
-
       <p>&copy; 2018 OZŪ</p>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/modal.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/stickable.js"></script>
+    <script type="text/javascript">
+      jQuery( document ).ready( function( $ ) {
+        $( '.sticky' ).stickable();
+      });
+    </script>
     <script src="js/main.js"></script>
 
   </body>
