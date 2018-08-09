@@ -33,9 +33,10 @@
 - MODAL: Used javaScript to call open the modal click, and then listen for click again to close.
 
 ##### Plugin 1
-- [STICKY NAV](https://www.jqueryscript.net/demo/jQuery-Plugin-For-Responsive-Sticky-Site-Header-Stickable/)
+- [STICKY NAV](https://www.jqueryscript.net/demo/jQuery-Plugin-For-Responsive-Sticky-Site-Header-Stickable/): Sticky Nav used on each page
 
 ##### Plugin 2
+- [SCROLL ME](http://scrollme.nckprsn.com/): Used on the iPhone mockup on homepage.
 
 #### Deductions
 > I have reviewed the list of deductions for this

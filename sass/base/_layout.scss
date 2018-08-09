@@ -56,6 +56,7 @@ body {
   margin: 0 auto;
   max-width: 1000px;
   min-height: 100vh;
+  z-index: 1;
 }
 
 .item-container {
@@ -230,13 +231,17 @@ span.line {
   width: 110%;
   max-width: 450px;
   display: block;
-  margin: $spacer-m -25%;
+  margin: $spacer-m auto;
 
   @include media($medium) {
     margin: $spacer-m auto;
     max-width: 450px;
     width: 100%;
   }
+}
+
+.benefits {
+    margin-top: 500px;
 }
 
 /******************    ABOUT    ******************/
