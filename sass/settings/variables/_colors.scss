@@ -6,8 +6,12 @@ $purple: #8E518D;
 $blue: #204E4B;
 $blue2: #299998;
 $light-grey: #F7F7F7;
+$grey: #D8D8D8;
+$dark-grey: #4C4C4C;
 $black: #000000;
 $white: #FFFFFF;
+$success-green: #5D9F43;
+$error-red: #D15D35;
 
 $colors: (
   'green': ( green ),
@@ -15,6 +19,10 @@ $colors: (
   'blue': ( blue ),
   'blue2': ( blue2 ),
   'light-grey': ( light-grey ),
+  'grey': ( grey ),
+  'dark-grey': ( dark-grey ),
   'black': ( black ),
   'white': ( white ),
+  'success-green': ( success-green ),
+  'error-red': ( error-red ),
 );
