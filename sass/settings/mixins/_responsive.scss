@@ -2,7 +2,7 @@
 // ========================================
 
 @mixin media($media) {
-    @media only screen and #{$media} {
-        @content;
-    }
+  @media only screen and #{$media} {
+      @content;
+  }
 }

@@ -1,7 +1,6 @@
 // Form Elements Stylesheet
 // ========================================
 
-// Basic Form Input Styling
 .input {
   border: 2px solid $grey;
   width: 90%;
@@ -24,7 +23,6 @@
   }
 }
 
-// Select Form Input Styling
 .select {
   @extend .input ;
   background-color: $white;
