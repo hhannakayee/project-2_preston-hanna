@@ -4,7 +4,7 @@
 [Repository Here](https://github.com/hhannakayee/project-2_preston-hanna.git)
 
 #### Link to website
-[Website Here](http://http://hannapreston.design/MMC6278/project-2_preston-hanna)
+[Website Here](hannapreston.design/MMC6278/project-2_preston-hanna)
 
 #### Link to W3C's Validator
 - [Home - W3C Validator](https://validator.w3.org/nu/?doc=http%3A%2F%2Fhannapreston.design%2FMMC6278%2Fproject-2_preston-hanna%2F)
